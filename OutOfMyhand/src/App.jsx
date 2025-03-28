@@ -7,6 +7,7 @@ import Shop from './pages/Shop'
 import Frontpage from './pages/Frontpage';
 import Archive from './pages/Archive';
 import Custom from './pages/Custom';
+import { db } from './Data/Firebase';
 
 
 function App() {
