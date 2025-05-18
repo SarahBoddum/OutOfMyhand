@@ -8,6 +8,7 @@ import Frontpage from './pages/Frontpage';
 import Archive from './pages/Archive';
 import Custom from './pages/Custom';
 import { db } from './Data/Firebase';
+import ArchiveDetail from './pages/ArchiveDetail';
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Archive" element={<Archive />} />
         <Route path="/Custom" element={<Custom />} />
+        <Route path="/archive/:year" element={<ArchiveDetail />} />
+        <Route path="/2025" element={<ArchiveDetail year="2025" />} />
+        <Route path="/2024" element={<ArchiveDetail year="2024" />} />
+        <Route path="/2023" element={<ArchiveDetail year="2023" />} />
      </Routes>
     </BrowserRouter>
     </>

@@ -39,8 +39,16 @@ p{
   font-family: 'antic-didone';
     font-size: 1.2vw;
 }
+h3{
+  font-size: 1.2vw;
+  font-family: 'anaheim';
+  font-weight: lighter;
+}
 .flex{
   display: flex;
+}
+a{
+  text-decoration: none;
 }
 /*------Navigation--------------*/
 .navigation{
@@ -52,7 +60,6 @@ p{
   top: 0; 
   display: flex;
   justify-content: space-between;
-
   padding-top: 5px;
 }
 #burger-menu{
@@ -65,7 +72,7 @@ p{
   text-decoration: none;
   font-weight: lighter;
   font-size: 18px;
-  padding-left: 5vw;
+  margin-left: 5vw;
   padding-top: 20px;
 }
 .navlink:hover{
@@ -82,8 +89,7 @@ p{
   width: 100vw;   
 }
 #about{
-  width: 50%;
-
+  margin-right: 40vw;
 }
 #logo{
   width: 60px;
@@ -93,6 +99,29 @@ p{
 #logo:hover{
   width: 62px;
   transition: 0.3s ease-in-out;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+}
+.dropdown-content {
+  display: none;
+  flex-direction: column-reverse;
+  position: absolute;
+  width: 100px;
+  margin-left: 90px;
+  padding-left: 10px;
+  margin-top: 5vh;
+  z-index: 100; /* Sørger for at den er over andre elementer */
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.dropdown-content .navlink{
+  font-size: 1vw;
+  padding-top: 0px;
+  margin-left: 0px;
 }
 
 /*FORSIDE--------------------*/
@@ -227,12 +256,200 @@ p{
   width: 80%;
 }
 
+/*---------ArchiveDetail-----------------*/
+.årOverskrift{
+  margin-left: 20vw;
+  margin-bottom: 10vh;
+  font-size: 4vw;
+}
+.archive-grid{
+  width: 80vw;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.archive-grid-img{
+  width: 23vw;
+  height: 60vh;
+  margin-bottom: 1vw;
+  object-fit: cover;
+}
+.archive-grid p{
+  margin-bottom: 9vh;
+}
+.layout-Two{
+  display: flex;
+  justify-content: space-between;
+}
+.layout-Two img{
+  width: 35vw;
+  height: 70vh;
+  object-fit: cover;
+}
+/*------------Custom----------*/
+.OverskriftCostum{
+  margin-bottom: 20vh;
+  margin-left: 10vw;
+}
+.marginL1{
+  margin-bottom: 15vh;
+}
+
+/*-------_Shop------*/
+#h1-txt{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  padding-left: 20vw;
+  padding-top: 10vh;
+}
+#h1-txt p{
+  padding-left: 10vw;
+  width: 50vw;
+  padding-top: 5vh;
+}
+/*-----COMPONENTS---------*/
+/*----top1----*/
+.top1{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  margin-bottom: 25vh;
+}
+.columnReverse{
+  flex-direction: row-reverse;
+}
+.haltreds50{
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+.leftAlign{
+  align-items: unset;
+  height: fit-content;
+  gap: 4vh;
+}
+.leftAlign h3{
+  font-size: 2vw;
+}
+.haltreds50 p{
+  width: 70%;
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+.leftAlign p{
+  margin-left:  0vw;
+}
+.haltreds50 h1{
+  margin-top: 7vh;
+}
+.haltreds50 img{
+  width: 65%;
+}
+.my-video{
+  width: 60%;
+}
+.pinklink{
+  background-color:#FFE0EC;
+  padding: 1.5vh 4vw;
+  font-size: 1.2vw;
+  font-family: 'antic-didone';
+  border: black 0.5px solid;
+  margin-top: 5vh;
+  color: black;
+}
+.pinklink:hover{
+  background-color: #ffcae4;
+  transition: 0.3s ease-in-out;
+}
+#customLink{
+  display: flex;
+  margin-top: 10vh;
+  width: 30vw;
+  margin-left: 5vw;
+  justify-content: space-between;
+  font-family: 'anaheim';
+  font-size: 1.3vw;
+}
+.CLink{
+  color:  black;
+}
+.CLink:hover{
+  color:#DF601C;
+  transition: 0.3s ease-in-out;
+}
+/*---------ArchiveComp1------*/
+.archive1{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  margin-bottom: 25vh;
+}
+.imgVertikal{
+  width: 45vw;
+  height: auto;
+  object-fit: contain;
+  margin-left: 5vw;
+}
+.imgVertikal:hover{
+  filter: brightness(93%);
+  transition: 0.3s ease-in-out;
+}
+.imgHorisontal{
+  width: 43vw;
+  margin-left: 3vw;
+  margin-top: 10vh;
+}
+.imgHorisontal:hover{
+  filter: brightness(93%);
+  transition: 0.3s ease-in-out;
+}
+.årstal{
+  margin-left: 3vw;
+  margin-top: 3vh;
+  color: black;
+}
+Link .årstal{
+  text-decoration: none;
+}
+.årstal:hover{
+  color: #f9479d;
+  transition: 0.3s ease-in-out;
+}
+/*------------Custom2--------*/
+.marginL1{
+  width: 80vw;
+  display: flex;
+  margin-left: 20vw;
+}
+.marginL1 img{
+  width: 55%;
+}
+#Custom2txt{
+  width: 45%;
+  padding-right: 3vw;
+  text-align: right;
+}
+#Custom2txt h3{
+  font-size: 2vw;
+  margin-bottom: 4vh;
+}
+
+
+
+
 @media only screen and (max-width: 1100px){
   .mobil{
       display: block;
   }
   .laptop{
       display: none;
+  }
+  h1{
+    font-size: 8vw;
   }
   p{
     font-size: 2.5vw;
@@ -251,7 +468,7 @@ p{
 
 }
 #logo{
-margin-left: 0vw;
+margin-left: 02vw;
 width: 120px;
 height: fit-content;
 margin-top: -1vh;
@@ -345,6 +562,25 @@ z-index: 3;
   overflow: hidden;
   height: 100vh; /* Lås højde til viewport */
 }
+#about{
+  margin-right: 0vw;
+}
+.dropdown{
+  display: block;
+}
+.dropdown-content {
+  display: flex;
+  position: static;
+  margin-top: 0vh;
+  margin-left: 0px;
+  padding-left: 60px;
+}
+.dropdown-content .navlink{
+  font-size: 3vw;
+  padding-top: 0px;
+  margin-left: -0px;
+  height: fit-content;
+}
 
 /*Forside---------*/
 #forsideTop{
@@ -382,7 +618,133 @@ z-index: 3;
 #aogs{
   margin-left: -10vw;
 }
-
+/*---------ArchiveDetail-----------------*/
+.årOverskrift{
+  margin-bottom: 7vh;
+  font-size: 8vw;
+}
+.archive-grid img{
+  width: 42vw;
+  height: 50vh;
+  margin-bottom: 1vh;
+}
+.archive-grid{
+  width: 90vw;
+  margin-left: 5vw;
+}
+/*------------Custom-------*/
+.my-video{
+  margin-left: 15vw;
+  width: 70vw;
+}
+.OverskriftCostum{
+  margin-bottom: 10vh;
+}
+.marginL1
+/*--------COMPONENTS-----------*/
+/*----top1----*/
+.top1{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.haltreds50{
+  width: 100vw;
+  align-items: unset;
+}
+.leftAlign h3{
+  text-align: left;
+  margin-left: 10vw;
+  font-size: 3.5vw;
+}
+.haltreds50 img{
+  width: 55%;
+  margin-left: 40%;
+}
+.leftAlign img{
+  margin-left: 10vw;
+}
+.haltreds50 h1{
+  margin-left: 7vw;
+  margin-top: 3vh;
+}
+.haltreds50 p{
+  margin-left: 15vw;
+}
+.leftAlign p{
+  margin-bottom: 10vh;
+}
+.pinklink{
+  font-size: 2.7vw;
+  width: 40vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 6vh;
+}
+#customLink{
+  font-size: 2.7vw;
+  width: 70vw;
+  margin-left: 15vw;
+}
+/*--------ArchiveComp1----------*/
+.archive1{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.imgVertikal{
+  margin-left: 0vw;
+  width: 55vw;
+}
+.AC1-txtImg{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 8vh;
+  width: 97vw;
+}
+.årstal{
+  font-size: 5vw;
+  margin-top: 0vh;
+}
+.imgHorisontal{
+  margin-top: 0vh;
+  width: 60vw;
+}
+.columnReverse{
+  flex-direction: column-reverse;
+}
+.columnReverse .imgVertikal{
+  margin-top: 7vh;
+  width: 65vw;
+  margin-left: 35vw;
+}
+.columnReverse .AC1-txtImg{
+  flex-direction: row;
+}
+.columnReverse .AC1-txtImg h3{
+  margin-top: 35vh;
+}
+/*--------Custom2-------*/
+.marginL1{
+  flex-direction: column;
+  margin-left: 0vw;
+  width: 100VW;
+}
+#Custom2txt{
+  width: 80vw;
+  margin-left: 10vw;
+}
+#Custom2txt h3{
+  font-size: 3.5vw;
+}
+.marginL1 img{
+  width: 75vw;
+  margin-left: 25vw;
+  margin-top: 5vh;
+  margin-bottom: 15vh;
+}
 }
 
 @media only screen and (max-width: 800px){
@@ -393,8 +755,11 @@ z-index: 3;
   .laptop{
       display: none;
   }
+  h1{
+    font-size: 11vw;
+  }
   p{
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   /*-------------burger---------------*/
@@ -437,16 +802,29 @@ z-index: 3;
       opacity: 0;
       width: 0;
   }
-  #logo{
-    width: 15vw;
-    height: fit-content;
-  }
+  #burger-menu span,
+#burger-menu span::before,
+#burger-menu span::after {
+  height: 2px;
+}
+#logo{
+  width: 70px;
+  position: absolute;
+  margin-top: 2vh;
+}
 
   #menu.overlay {
-      margin-top: 52px;
+      padding-top: 52px;
   }
   #xul {
       margin-top: 30px;
+  }
+  .dropdown-content {
+    padding-left: 30px;
+
+  }
+  .dropdown-content .navlink{
+    font-size: 4.5vw;
   }
   /*Forside.------------*/
   .flex{
@@ -521,6 +899,75 @@ z-index: 3;
 .halvSkærm{
   flex-direction: row-reverse;
   width: 100vw;
+  margin-bottom: 10vh;
+}
+/*---------ArchiveDetail-----------------*/
+.archive-grid img{
+  height: 35vh;
+}
+.årOverskrift{
+  margin-bottom: 5vh;
+  font-size: 9vw;
+}
+.layout-Two img{
+  width: 90vw;
+  height: 60vh;
+  object-fit: cover;
+}
+/*---------_Custom----------*/
+#custom{
+  font-size: 10vw;
+}
+.my-video{
+  margin-left: 5vw;
+  width: 90vw;
+}
+#Custom2txt h3{
+  font-size: 5vw;
+}
+#performance{
+  font-size: 9vw;
+}
+/*----------COMPONENTS--------*/
+/*--------top1----------*/
+.haltreds50 img{
+  width: 80%;
+  margin-left: 20%;
+}
+.leftAlign h3{
+  font-size: 5vw;
+}
+.haltreds50 p{
+  width: 75%;
+  margin-top: 3vh;
+  margin-left: 10vw;
+}
+
+.pinklink{
+  font-size: 4vw;
+}
+.CLink{
+  font-size: 4.5vw;
+}
+/*------------------ArchiveComp1--------*/
+.archive1{
+  margin-bottom: 15vh;
+}
+.imgVertikal{
+  width: 70vw;
+}
+.imgHorisontal{
+  width: 70vw;
+}
+.årstal{
+  font-size: 5.5vw;
+}
+.columnReverse .AC1-txtImg h3{
+  margin-top: 28vh;
+}
+.columnReverse .imgVertikal{
+  margin-left: 30vw;
+  width: 70vw;
   margin-bottom: 10vh;
 }
 }
